@@ -2,3 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import 'github-syntax-dark/lib/github-dark.css';
+@layer components {
+  .layout {
+    @apply w-screen h-screen overflow-auto
+        flex flex-col items-center bg-zinc-800 text-neutral-300 font-sans;
+  }
+  .label {
+    @apply bg-sky-300 px-2 py-1 mt-2 font-semibold rounded-xl text-zinc-800 hover:bg-sky-200 hover:text-zinc-700 transition-all duration-300 min-w-[5rem];
+  }
+  .label-selected {
+    @apply bg-sky-800 px-2 py-1 mt-2 font-semibold rounded-xl text-zinc-200 transition-all duration-300 min-w-[5rem];
+  }
+}
